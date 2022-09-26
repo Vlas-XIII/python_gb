@@ -56,9 +56,24 @@
 # Пример:
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
-from math import sqrt
-print('Введите координаты x и y для точек А и В')
-x1, y1 = float(input('x точки А: ')), float(input('у точки А: '))
-x2, y2 = float(input('x точки В: ')), float(input('у точки В: '))
-print(round(sqrt((x2 - x1)**2 + (y2 - y1)**2), 2))
-print(round(((x2 - x1)**2 + (y2 - y1)**2)**0.5, 2))
+
+# from math import sqrt
+# print('Введите координаты x и y для точек А и В')
+# x1, y1 = float(input('x точки А: ')), float(input('у точки А: '))
+# x2, y2 = float(input('x точки В: ')), float(input('у точки В: '))
+# print(round(sqrt((x2 - x1)**2 + (y2 - y1)**2), 2))
+# print(round(((x2 - x1)**2 + (y2 - y1)**2)**0.5, 2))
+
+
+# Напишите программу для. проверки истинности утверждения 
+# ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
+
+
+for x in 1, 0:
+    for y in 1, 0:
+        for z in 1, 0:
+            print(f"{x = } {y = } {z = }  {(not(x or y or z)) == ((not x) and (not y) and (not z))}")
+
+
+# left = not(x or y or z)
+# right = not x and not y and not z
