@@ -75,4 +75,4 @@
 # print('Введите координаты x и y для точек А и В')
 # x1, y1 = float(input('x точки А: ')), float(input('у точки А: '))
 # x2, y2 = float(input('x точки В: ')), float(input('у точки В: '))
-# print(round(((x2 - x1)**2 + (y2 - y1)**2)**0.5, 2))
+# print(round(((x2 - x1)** 2 + (y2 - y1)**2)** 0.5, 2))
